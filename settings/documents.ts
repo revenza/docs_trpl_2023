@@ -12,11 +12,11 @@ export const Documents: Paths[] = [
     heading: "Analisis dan Desain Perangkat Lunak",
     items: [
       {
-        title: "Cards",
+        title: "Business Requirement",
         href: "/cards",
       },
       {
-        title: "Diagrams",
+        title: "Stakeholder Requirement",
         href: "/diagrams",
       },
       {
@@ -50,13 +50,13 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Analisis Kebutuhan",
-    href: "/markup",
+    title: "Perancangan Desain Antarmuka",
+    href: "/markup-copy",
     heading: "Perancangan Desain Antarmuka",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "Sketsa Awal",
+        href: "/Sketsa-Awal",
       },
       {
         title: "Diagrams",
