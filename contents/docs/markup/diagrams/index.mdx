@@ -1,46 +1,39 @@
 ---
-title: Diagrams
-description: This section provides an overview of Introduction.
+title: Stakeholder Requirement
+description: web Pelacak Lokasi Teman dalam Keadaan Darurat.
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+---
 
-## Flowchart
+# **Stakeholder Requirement**  
 
-<Mermaid chart={`graph TD;
-    Start --> Task1;
-    Task1 --> Task2;
-    Task2 --> End;`} />
+### **Pihak yang Terlibat**
 
-##  Decision Tree
+#### **1. Pemilik Proyek**
+- **Deskripsi:** Orang yang punya ide dan bertanggung jawab atas pengembangan aplikasi.  
+- **Kebutuhan:**  
+  - Aplikasi berjalan sesuai rencana.
+  - Fitur sesuai dengan tujuan utama: pelacakan lokasi darurat.
+  - Laporan perkembangan proyek secara berkala.
 
-<Mermaid chart={`graph TD;
-    A[Start] --> B{Is it raining?};
-    B -->|Yes| C[Take an umbrella];
-    B -->|No| D[Enjoy the weather];
-    C --> E[Go outside];
-    D --> E;`} />
+#### **2. Pengguna Aplikasi**
+- **Deskripsi:** Orang-orang yang menggunakan aplikasi untuk meminta bantuan atau menerima notifikasi darurat.  
+- **Kebutuhan:**  
+  - Aplikasi mudah digunakan tanpa kebingungan.
+  - Tombol darurat bekerja cepat dan mengirim lokasi ke WhatsApp.
+  - Data pribadi aman.
 
-## Entity-Relationship Diagram
+#### **3. Tim Pengembang**
+- **Deskripsi:** Orang yang membuat, memperbaiki, dan memastikan aplikasi berjalan lancar.  
+- **Kebutuhan:**  
+  - Instruksi pengembangan yang jelas.
+  - Masukan dari pengguna untuk perbaikan.
+  - Alat kerja yang mendukung.
 
-<Mermaid chart={`erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    PRODUCT ||--o{ LINE-ITEM : "included in"
-    CUSTOMER {
-        string name
-        string email
-    }
-    ORDER {
-        int orderNumber
-        date orderDate
-    }
-    LINE-ITEM {
-        int quantity
-        float price
-    }
-    PRODUCT {
-        int productId
-        string name
-        float price
-    }`} />
+#### **4. Penerima Notifikasi**
+- **Deskripsi:** Orang yang menerima pesan darurat dari aplikasi.  
+- **Kebutuhan:**  
+  - Notifikasi yang jelas dan langsung.
+  - Lokasi yang akurat untuk membantu pengguna.
+
+---

@@ -1,79 +1,69 @@
 ---
-title: Cards
-description: This section provides an overview of Introduction.
+title: "Business Requirement Document"
+version: "1.0"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+# **Business Requirement Document**
 
-## Small Card
+## **Proyek: Aplikasi Pelacak Lokasi Darurat**
 
-<CardGrid>
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-    description="test description"
-  />
-  <Card
-    title="Page Structure"
-    href="/docs/deep/deeper"
-    icon="alignJustify"
-    variant="small"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    icon="alignJustify"
-    external={true}
-    variant="small"
-  />
-</CardGrid>
+### **Pendahuluan**
 
-## Large Card
+#### **Deskripsi Proyek**
+Aplikasi ini bertujuan membantu pengguna melacak lokasi teman atau kerabat yang membutuhkan bantuan darurat. Fitur utama mencakup pengiriman notifikasi darurat dan lokasi ke WhatsApp ketika tombol darurat ditekan, serta fitur pelacakan lokasi real-time.
 
-<CardGrid>
-  <Card
-    subtitle="Instructions"
-    title="Installation"
-    description="Get started with Documents using our quick start installation guide to get your project started."
-    href="/docs/introduction/installation"
-  />
-  <Card
-    subtitle="Setup"
-    title="Site Settings"
-    description="Setting up your Documents projects layout, links and search engine optimisation."
-    href="/docs/introduction/setup"
-  />
-  <Card
-    subtitle="Support"
-    title="Rubix Studios"
-    description="Australia's leading branding, marketing and web development company."
-    href="https://www.rubixstudios.com.au/"
-    external={true}
-  />
-</CardGrid>
+#### **Tujuan Utama**
+- Memberikan solusi cepat untuk mengirim notifikasi darurat.
+- Membantu pengguna menemukan lokasi teman secara akurat dan real-time.
+- Terintegrasi dengan WhatsApp untuk penyampaian informasi secara instan.
 
-## Image Card
+#### **Masalah yang Diselesaikan**
+- Keterlambatan dalam menyampaikan informasi lokasi darurat.
+- Sulitnya mengetahui lokasi teman atau kerabat dalam situasi mendesak.
 
-<CardGrid>
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    external={true}
-    variant="image"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    variant="image"
-  />
-  <Card
-    title="Rubix Studios"
-    href="https://www.rubixstudios.com.au"
-    image="/images/og-image.png"
-    variant="image"
-  />
-</CardGrid>
+---
+
+### **Fungsional dan Spesifikasi Kebutuhan**
+
+#### **Fungsional Utama**
+1. **Tombol Darurat**  
+   - Mengirimkan notifikasi darurat berisi pesan dan lokasi pengguna ke WhatsApp penerima yang telah terdaftar.
+2. **Pelacakan Lokasi Real-Time**  
+   - Menampilkan lokasi teman yang telah memberikan izin pelacakan.
+3. **Manajemen Kontak Darurat**  
+   - CRUD (Create, Read, Update, Delete) untuk nama dan nomor WhatsApp penerima darurat.
+
+#### **Spesifikasi Teknis**
+- **Platform:** Aplikasi mobile berbasis React Native, kompatibel untuk Android dan iOS.
+- **Backend:** Menggunakan PHP untuk manajemen data penerima.
+- **Database:** MySQL untuk menyimpan data kontak darurat dan log aktivitas.
+- **Integrasi:** WhatsApp API untuk pengiriman pesan otomatis.
+
+---
+
+### **Kebutuhan Non-Fungsional**
+
+#### **Kinerja**
+- Aplikasi harus dapat mengirimkan notifikasi darurat dalam waktu kurang dari 3 detik.
+- Memproses hingga 1000 notifikasi darurat per detik.
+
+#### **Keandalan**
+- Sistem harus tersedia 24/7 dengan downtime maksimal 1 jam per bulan.
+- Notifikasi darurat harus mencapai penerima dengan tingkat keberhasilan 99%.
+
+#### **Keamanan**
+- Semua data pengguna dienkripsi, termasuk nomor kontak dan lokasi.
+#### **Kesesuaian**
+- Aplikasi harus dapat berjalan di Android (versi 7 ke atas) dan iOS (versi 12 ke atas).
+- Mendukung berbagai bahasa (termasuk Bahasa Indonesia dan Inggris).
+
+---
+
+### **Kebutuhan Pemeliharaan**
+- **Backup Otomatis**  
+  - Data kontak dan log aktivitas disimpan setiap hari di server cadangan.
+
+---
+
+### **Kesimpulan**
+Aplikasi ini dirancang untuk memberikan solusi cepat dan andal dalam situasi darurat dengan memanfaatkan teknologi pelacakan lokasi dan integrasi WhatsApp. Proyek ini bertujuan menciptakan pengalaman pengguna yang mudah, cepat, dan aman.
