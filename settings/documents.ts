@@ -20,32 +20,12 @@ export const Documents: Paths[] = [
         href: "/diagrams",
       },
       {
-        title: "Filetree",
+        title: "System Requirement",
         href: "/filetree",
       },
       {
-        title: "Lists",
+        title: "Software Requirements",
         href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
       },
     ],
   },
