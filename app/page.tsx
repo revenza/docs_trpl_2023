@@ -10,7 +10,7 @@ export default function Home() {
         Web Documents
       </h1>
       <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
-        Kumpulan . That&apos;s simple to use and easy to customize.
+        Kumpulan dokumentasi dari aplikasi yang ingin di buat. seperti&apos; BUSSINES REQUIREMENT dll.
       </p>
       <div className="flex items-center gap-5">
         <Link
