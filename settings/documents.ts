@@ -4,53 +4,62 @@ export const Documents: Paths[] = [
   {
     title: "Introduction",
     href: "/introduction",
-    heading: "Getting started",
-    items: [
-      {
-        title: "Installation",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
-      },
-      {
-        title: "Changelog",
-        href: "/changelog",
-      },
-    ],
+    heading: "Getting started"
   },
   {
     spacer: true,
   },
-  {
-    title: "Navigation",
-    href: "/navigation",
-    heading: "Documents",
-  },
-  {
-    title: "Structure",
-    href: "/structure",
-    items: [
-      {
-        title: "Deeper",
-        href: "/deeper",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
-      },
-    ],
-  },
+
   {
     spacer: true,
   },
   {
-    title: "Markup",
+    title: "Analisis Kebutuhan",
     href: "/markup",
-    heading: "Components",
+    heading: "Analisis dan Desain Perangkat Lunak",
+    items: [
+      {
+        title: "Cards",
+        href: "/cards",
+      },
+      {
+        title: "Diagrams",
+        href: "/diagrams",
+      },
+      {
+        title: "Filetree",
+        href: "/filetree",
+      },
+      {
+        title: "Lists",
+        href: "/lists",
+      },
+      {
+        title: "Maths",
+        href: "/maths",
+      },
+      {
+        title: "Notes",
+        href: "/notes",
+      },
+      {
+        title: "Steps",
+        href: "/steps",
+      },
+      {
+        title: "Table",
+        href: "/table",
+      },
+      {
+        title: "Tabs",
+        href: "/tabs",
+      },
+    ],
+  },
+  {
+    title: "Analisis Kebutuhan",
+    href: "/markup",
+    heading: "Perancangan Desain Antarmuka",
     items: [
       {
         title: "Cards",
