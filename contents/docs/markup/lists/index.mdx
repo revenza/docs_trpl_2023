@@ -1,34 +1,34 @@
 ---
-title: Lists
-description: This section provides an overview of Introduction.
+title: Software Requirement
+description: web Pelacak Lokasi Teman dalam Keadaan Darurat.
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
+# Software Requirements
 
-## Checklist
+## 1. Aplikasi Web
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+### 1.1 Web Server
+- **Apache HTTP Server** atau **Nginx**: Digunakan untuk hosting aplikasi web pada server. Web server ini akan melayani permintaan dari klien (browser) untuk halaman HTML, CSS, dan JavaScript.
 
-## Simple List
+### 1.2 Database Management System
+- **MySQL** atau **MariaDB**: Digunakan untuk menyimpan data pengguna, kontak darurat, dan riwayat notifikasi. Sistem manajemen database ini sangat umum digunakan dalam aplikasi berbasis PHP.
 
-- Item 1
-- Item 2
-- Item 3
+### 1.3 Backend Framework
+- **PHP 7.4+**: Bahasa pemrograman yang digunakan untuk membuat logika server-side, memproses data dari pengguna, dan mengirimkan notifikasi melalui API WhatsApp.
 
-## Number List
+### 1.4 Frontend Technologies
+- **HTML5, CSS3, JavaScript**: Digunakan untuk membangun antarmuka pengguna dan interaksi pengguna dengan aplikasi.
+- **Bootstrap 4/5**: Framework CSS untuk membangun tampilan responsif dan mobile-friendly pada aplikasi web.
+- **jQuery**: Digunakan untuk menambah interaktivitas pada elemen-elemen di halaman seperti deteksi lokasi dan pengiriman notifikasi.
 
-1. Research
-2. Draft the content
-3. Review and edit
-4. Publish
+### 1.5 Geolocation API
+- **HTML5 Geolocation API**: Digunakan untuk mendeteksi lokasi pengguna secara otomatis ketika tombol darurat ditekan.
 
-## Nested List
+### 1.6 WhatsApp API
+- **Twilio API for WhatsApp** atau **WhatsApp Business API**: Digunakan untuk mengirimkan pesan darurat dan lokasi pengguna ke nomor WhatsApp yang sudah ditentukan.
 
-- Main Category 1
-  - Sub Item 1.1
-  - Sub Item 1.2
-- Main Category 2
-  - Sub Item 2.1
-  - Sub Item 2.2
+### 1.7 Development Tools
+- **Visual Studio Code**: Text editor yang digunakan untuk menulis kode aplikasi.
+- **XAMPP** atau **MAMP**: Digunakan untuk menjalankan server lokal untuk pengembangan aplikasi web berbasis PHP.
+  
+---
