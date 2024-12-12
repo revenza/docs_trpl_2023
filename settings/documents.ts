@@ -8,6 +8,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Analisis Kebutuhan",
+    href: "/markup",
     heading: "Analisis dan Desain Perangkat Lunak",
     items: [
       {
@@ -50,6 +51,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Analisis Kebutuhan",
+    href: "/markup",
     heading: "Perancangan Desain Antarmuka",
     items: [
       {
