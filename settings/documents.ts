@@ -7,28 +7,53 @@ export const Documents: Paths[] = [
     heading: "Getting started"
   },
   {
-    title: "Analisis Kebutuhan",
+    title: "Analisis dan Desain Perangkat Lunak",
     href: "/markup",
     heading: "Analisis dan Desain Perangkat Lunak",
     items: [
       {
-        title: "Business Requirement",
-        href: "/cards",
+        title: "Analisis Kebutuhan",
+        href: "/analysis-requirements",
+        items: [
+          {
+            title: "Business Requirement",
+            href: "/cards"
+          },
+          {
+            title: "Stakeholder Requirement",
+            href: "/diagrams"
+          },
+          {
+            title: "System Requirement",
+            href: "/filetree"
+          },
+          {
+            title: "Software Requirements",
+            href: "/lists"
+          }
+        ]
       },
       {
-        title: "Stakeholder Requirement",
+        title: "Diagram",
         href: "/diagrams",
-      },
-      {
-        title: "System Requirement",
-        href: "/filetree",
-      },
-      {
-        title: "Software Requirements",
-        href: "/lists",
-      },
-    ],
+        items: [
+          {
+            title: "Use Case Diagram",
+            href: "/use-case-diagram"
+          },
+          {
+            title: "Class Diagram",
+            href: "/class-diagram"
+          },
+          {
+            title: "Flowchart",
+            href: "/flowchart"
+          }
+        ]
+      }
+    ]
   },
+  
   {
     title: "Perancangan Desain Antarmuka",
     href: "/markup-copy",
