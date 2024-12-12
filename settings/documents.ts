@@ -7,13 +7,6 @@ export const Documents: Paths[] = [
     heading: "Getting started"
   },
   {
-    spacer: true,
-  },
-
-  {
-    spacer: true,
-  },
-  {
     title: "Analisis Kebutuhan",
     heading: "Analisis dan Desain Perangkat Lunak",
     items: [
