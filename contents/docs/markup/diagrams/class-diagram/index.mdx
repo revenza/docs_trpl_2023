@@ -1,38 +1,40 @@
-classDiagram
+<Mermaid chart={`
+  classDiagram
     class User {
-        +int id
-        +string username
-        +string email
-        +string password
-        +datetime created_at
-        +login() bool
-        +logout() void
+      +int id
+      +string username
+      +string email
+      +string password
+      +datetime created_at
+      +login() bool
+      +logout() void
     }
 
     class Contact {
-        +int id
-        +int user_id
-        +string name
-        +string phone
-        +datetime created_at
-        +datetime updated_at
-        +createContact() void
-        +editContact() void
-        +deleteContact() void
+      +int id
+      +int user_id
+      +string name
+      +string phone
+      +datetime created_at
+      +datetime updated_at
+      +createContact() void
+      +editContact() void
+      +deleteContact() void
     }
 
     class Blog {
-        +int id
-        +int user_id
-        +string title
-        +string image
-        +text content
-        +string author
-        +datetime created_at
-        +createBlog() void
-        +editBlog() void
-        +deleteBlog() void
+      +int id
+      +int user_id
+      +string title
+      +string image
+      +text content
+      +string author
+      +datetime created_at
+      +createBlog() void
+      +editBlog() void
+      +deleteBlog() void
     }
 
     User "1" --> "0..*" Contact : has
     User "1" --> "0..*" Blog : writes
+`} />
