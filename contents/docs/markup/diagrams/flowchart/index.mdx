@@ -1,0 +1,48 @@
+# Flowchart: Emergency Contact and Blog Website
+
+```mermaid
+graph TD
+    Start --> |Masuk ke website| A[Sudah Punya Akun?]
+    A --> |Yes| B[Login]
+    A --> |No| C[Daftar Akun]
+    B --> D[Masuk ke Dashboard]
+    C --> B
+
+    D --> |Belum punya kontak?| E{Punya Info Kontak?}
+    E --> |No| F[Buat Kontak Baru]
+    E --> |Yes| G[Informasi Kontak Muncul di Dashboard]
+    F --> H[Input Nama dan No. WhatsApp]
+    H --> I[Submit Kontak]
+    I --> G
+
+    G --> J[Edit Kontak]
+    G --> K[Hapus Kontak]
+    G --> L[Klik Kontak untuk Kirim Notifikasi ke WhatsApp]
+    J --> M[Input Nama Baru dan No. WhatsApp]
+    M --> I
+    K --> G
+
+    D --> N[Masuk ke Halaman Blog]
+    N --> O[Tampilkan Blog]
+    O --> P[Klik Blog untuk Baca Detail]
+    N --> Q[Buat Blog Baru]
+    Q --> R[Input Judul, Gambar, Konten, dan Author]
+    R --> S[Submit Blog]
+    S --> O
+
+    L --> End
+    P --> End
+    S --> End
+```
+
+### Penjelasan
+1. **Mulai**: Pengguna membuka website.
+2. **Registrasi/Login**: Jika pengguna belum punya akun, mereka harus mendaftar terlebih dahulu.
+3. **Dashboard**: Setelah login, pengguna diarahkan ke dashboard untuk:
+   - Menambahkan kontak baru.
+   - Melihat, mengedit, atau menghapus kontak yang sudah ada.
+   - Mengirimkan notifikasi darurat ke nomor WhatsApp dari kontak yang tersedia.
+4. **Blog**: Di halaman blog, pengguna bisa:
+   - Melihat blog yang tersedia.
+   - Membuat blog baru dengan mengisi judul, gambar, konten, dan nama author.
+5. **Akhir**: Notifikasi dikirimkan atau blog berhasil disimpan/dibaca.
