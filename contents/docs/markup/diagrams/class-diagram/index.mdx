@@ -1,0 +1,35 @@
+
+# Diagram Kelas untuk Aplikasi Pelacakan Darurat
+
+Berikut adalah diagram kelas untuk aplikasi pelacakan darurat yang mencakup **User**, **Contact**, dan **Blog**.
+
+<MermaidDiagram chart={`
+  classDiagram
+    class User {
+        +int id
+        +string username
+        +string email
+        +string password
+        +date created_at
+    }
+    
+    class Contact {
+        +int id
+        +string name
+        +string phone
+        +date created_at
+        +date updated_at
+    }
+    
+    class Blog {
+        +int id
+        +string title
+        +string content
+        +string author
+        +date created_at
+        +string image
+    }
+    
+    User "1" -- "0..*" Contact : has
+    User "1" -- "0..*" Blog : creates
+`} />
