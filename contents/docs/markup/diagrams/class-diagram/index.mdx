@@ -7,8 +7,8 @@ title: Class Diagram
   classDiagram
     class User {
       +int id
-      +string username
-      +string password
+      +varchar username
+      +varchar password
       +login() bool
       +logout() void
     }
@@ -16,8 +16,8 @@ title: Class Diagram
     class Contact {
       +int id
       +int user_id
-      +string name
-      +string phone
+      +varchar name
+      +varchar phone
       +createContact() void
       +editContact() void
       +deleteContact() void
@@ -26,10 +26,10 @@ title: Class Diagram
     class Blog {
       +int id
       +int user_id
-      +string title
-      +string image
+      +varchar title
+      +varchar image
       +text content
-      +string author
+      +varchar author
       +datetime created_at
       +createBlog() void
       +editBlog() void
