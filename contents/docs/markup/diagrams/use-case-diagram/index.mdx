@@ -9,6 +9,7 @@ title: Usecase
 %% Use Case Diagram
 classDiagram
   class Pengguna
+  class Admin
   class UC1 {
     Registrasi Akun
   }
@@ -39,6 +40,15 @@ classDiagram
   class UC10 {
     Baca Blog
   }
+  class UC11 {
+    Kelola Pengguna
+  }
+  class UC12 {
+    Kelola Kontak
+  }
+  class UC13 {
+    Kelola Blog
+  }
 
   Pengguna --> UC1
   Pengguna --> UC2
@@ -50,5 +60,19 @@ classDiagram
   Pengguna --> UC8
   Pengguna --> UC9
   Pengguna --> UC10
+  
+  Admin --> UC11
+  Admin --> UC12
+  Admin --> UC13
+  Admin --> UC1
+  Admin --> UC2
+  Admin --> UC3
+  Admin --> UC4
+  Admin --> UC5
+  Admin --> UC6
+  Admin --> UC7
+  Admin --> UC8
+  Admin --> UC9
+  Admin --> UC10
 `}/>
 
