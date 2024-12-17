@@ -5,37 +5,57 @@ title: Class Diagram
 ---
 <Mermaid chart={`
   classDiagram
-    class User {
-      +int id
-      +varchar username
-      +varchar password
-      +login() bool
-      +logout() void
-    }
+  class User {
+    +int id
+    +varchar username
+    +varchar password
+    +login() bool
+    +logout() void
+  }
 
-    class Contact {
-      +int id
-      +int user_id
-      +varchar name
-      +varchar phone
-      +createContact() void
-      +editContact() void
-      +deleteContact() void
-    }
+  class Contact {
+    +int id
+    +int user_id
+    +varchar name
+    +varchar phone
+    +createContact() void
+    +editContact() void
+    +deleteContact() void
+  }
 
-    class Blog {
-      +int id
-      +int user_id
-      +varchar title
-      +varchar image
-      +text content
-      +varchar author
-      +datetime created_at
-      +createBlog() void
-      +editBlog() void
-      +deleteBlog() void
-    }
+  class Blog {
+    +int id
+    +int user_id
+    +varchar title
+    +varchar image
+    +text content
+    +varchar author
+    +datetime created_at
+    +createBlog() void
+    +editBlog() void
+    +deleteBlog() void
+  }
 
-    User "1" --> "0..*" Contact : has
-    User "1" --> "0..*" Blog : writes
+  class Admin {
+    +int id
+    +varchar username
+    +varchar password
+    +login() bool
+    +logout() void
+    +createUser() void
+    +editUser() void
+    +deleteUser() void
+    +createContact() void
+    +editContact() void
+    +deleteContact() void
+    +createBlog() void
+    +editBlog() void
+    +deleteBlog() void
+  }
+
+  User "1" --> "0..*" Contact : has
+  User "1" --> "0..*" Blog : writes
+  Admin "1" --> "0..*" User : manages
+  Admin "1" --> "0..*" Contact : manages
+  Admin "1" --> "0..*" Blog : manages
 `} />
