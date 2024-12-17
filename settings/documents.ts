@@ -64,36 +64,12 @@ export const Documents: Paths[] = [
         href: "/Sketsa-Awal",
       },
       {
-        title: "Diagrams",
-        href: "/diagrams",
+        title: "wireframe",
+        href: "/wireframe",
       },
       {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
+        title: "prototype",
+        href: "/prototype",
       },
     ],
   },
