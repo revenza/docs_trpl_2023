@@ -53,7 +53,7 @@ export const Documents: Paths[] = [
       },
       {
         title: "Metode SDLC",
-        href: "/Metode SDLC",
+        href: "/Metod-SDLC",
         items: [
           {
             title: "Scrum",
