@@ -4,121 +4,117 @@ description: web Emergency Alert.
 ---
 
 # System Requirements
+### Functional Requirements
 
-## Functional Requirements:
-1. **Sistem dapat menyimpan data nama dan nomor WhatsApp**:
-   - Pengguna dapat menyimpan dan mengelola kontak darurat yang mencakup nama dan nomor WhatsApp.
+Aplikasi ini dirancang untuk memungkinkan pengguna **menyimpan dan mengelola data kontak darurat** yang meliputi **nama** dan **nomor WhatsApp**. Pengguna dapat **menambah**, **memperbarui**, dan **menghapus** kontak dengan mudah.
 
-2. **Sistem dapat mendeteksi lokasi pengguna secara otomatis**:
-   - Aplikasi menggunakan Geolocation API untuk mendeteksi lokasi pengguna saat tombol darurat ditekan.
+Salah satu fitur utama adalah kemampuan aplikasi untuk **mendeteksi lokasi pengguna secara otomatis** menggunakan **Geolocation API** setiap kali tombol darurat ditekan. Setelah itu, pengguna dapat **mengirimkan pesan darurat** yang berisi **lokasi terkini** melalui **WhatsApp API** untuk memastikan penerima pesan mendapatkan informasi yang akurat dan tepat waktu.
 
-3. **Sistem dapat mengirimkan notifikasi darurat ke WhatsApp**:
-   - Pengguna dapat mengirimkan pesan darurat beserta lokasi mereka melalui WhatsApp API.
+Antarmuka aplikasi dirancang untuk sederhana dan **responsif**, menggunakan teknologi seperti **Bootstrap** untuk memastikan kompatibilitas aplikasi di berbagai perangkat, baik desktop maupun mobile.
 
-4. **Sistem memiliki antarmuka pengguna yang sederhana namun informatif**:
-   - Antarmuka aplikasi dirancang dengan Bootstrap untuk kemudahan penggunaan pada berbagai perangkat.
+Selain itu, aplikasi ini menyediakan fitur **riwayat notifikasi** yang memungkinkan pengguna untuk melihat daftar **notifikasi darurat** yang telah dikirim, sebagai referensi di masa mendatang.
 
-5. **Riwayat notifikasi darurat dapat dilihat oleh pengguna**:
-   - Pengguna dapat melihat riwayat notifikasi darurat yang telah dikirim.
+### Non-Functional Requirements
 
-## Non-Functional Requirements:
-1. **Keamanan**:
-   - Data kontak dan notifikasi harus terlindungi dengan enkripsi dan tidak dapat diakses oleh pihak ketiga.
+Keamanan adalah salah satu aspek yang sangat diperhatikan dalam aplikasi ini. **Data kontak** dan **riwayat notifikasi** pengguna akan dilindungi dengan **enkripsi** yang kuat, untuk memastikan bahwa tidak ada pihak ketiga yang dapat mengakses informasi pribadi pengguna.
 
-2. **Responsivitas**:
-   - Aplikasi harus berfungsi dengan baik di perangkat desktop dan mobile, memastikan pengalaman pengguna yang konsisten.
+Aplikasi ini dirancang dengan **responsivitas tinggi**, memastikan pengalaman pengguna yang optimal, baik di perangkat desktop maupun mobile.
 
-3. **Kecepatan**:
-   - Pengiriman notifikasi harus dilakukan dalam waktu kurang dari 5 detik untuk memastikan respon cepat dalam situasi darurat.
+Kecepatan adalah hal penting dalam situasi darurat, oleh karena itu pengiriman **notifikasi darurat** akan berlangsung dalam waktu **kurang dari 5 detik** agar penanganan situasi darurat bisa dilakukan secepat mungkin.
 
-4. **Availability**:
-   - Aplikasi harus tersedia 24/7 tanpa downtime untuk memastikan bahwa pengguna dapat mengaksesnya kapan saja dalam kondisi darurat.
+Terakhir, aplikasi ini memiliki tingkat **ketersediaan 24/7**, yang memungkinkan akses kapan saja dalam keadaan darurat, memastikan pengguna tetap dapat mengandalkan aplikasi ini di berbagai waktu.
 
-## Minimum System Requirements (Web)
 
-### Operating System:
-- **Windows**: Windows 7 atau yang lebih tinggi
-- **macOS**: macOS 10.12 atau yang lebih tinggi
+---
 
-### Browser:
+### Minimum System Requirements (Web)
+
+#### Operating System
+- Windows 7 atau yang lebih tinggi
+- macOS 10.12 atau yang lebih tinggi
+
+#### Browser
 - Google Chrome (versi terbaru)
 - Mozilla Firefox (versi terbaru)
 - Microsoft Edge (versi terbaru)
 
-### Processor:
+#### Processor
 - Intel Core i3 (1.8 GHz) atau setara
 
-### Memory:
+#### Memory
 - 4 GB RAM
 
-### Storage:
+#### Storage
 - 5 GB ruang kosong (untuk penyimpanan aplikasi dan data)
 
-### Display:
+#### Display
 - Resolusi 1280x800 atau lebih tinggi
 
-### Internet:
-- Koneksi internet broadband untuk akses aplikasi dan pembaruan
-
-## Recommended System Requirements (Web)
-
-### Operating System:
-- **Windows**: Windows 10 atau yang lebih tinggi
-- **macOS**: macOS 10.14 atau yang lebih tinggi
-
-### Browser:
-- Google Chrome (versi terbaru)
-- Mozilla Firefox (versi terbaru)
-- Microsoft Edge (versi terbaru)
-
-### Processor:
-- Intel Core i5 (2.5 GHz) atau setara
-
-### Memory:
-- 8 GB RAM
-
-### Storage:
-- 10 GB SSD ruang kosong
-
-### Display:
-- Resolusi 1920x1080 atau lebih tinggi
-
-### Internet:
+#### Internet
 - Koneksi internet broadband untuk akses aplikasi dan pembaruan
 
 ---
 
-## Minimum System Requirements (Android)
+### Recommended System Requirements (Web)
 
-### Operating System:
-- **Android**: Android 6.0 (Marshmallow) atau lebih tinggi
+#### Operating System
+- Windows 10 atau yang lebih tinggi
+- macOS 10.14 atau yang lebih tinggi
 
-### Processor:
+#### Browser
+- Google Chrome (versi terbaru)
+- Mozilla Firefox (versi terbaru)
+- Microsoft Edge (versi terbaru)
+
+#### Processor
+- Intel Core i5 (2.5 GHz) atau setara
+
+#### Memory
+- 8 GB RAM
+
+#### Storage
+- 10 GB SSD ruang kosong
+
+#### Display
+- Resolusi 1920x1080 atau lebih tinggi
+
+#### Internet
+- Koneksi internet broadband untuk akses aplikasi dan pembaruan
+
+---
+
+### Minimum System Requirements (Android)
+
+#### Operating System
+- Android 6.0 (Marshmallow) atau lebih tinggi
+
+#### Processor
 - Quad-core 1.3 GHz atau lebih tinggi
 
-### Memory:
+#### Memory
 - 2 GB RAM atau lebih
 
-### Storage:
+#### Storage
 - 100 MB ruang kosong untuk aplikasi
 
-### Internet:
+#### Internet
 - Koneksi internet untuk pengiriman notifikasi darurat
 
-## Recommended System Requirements (Android)
+---
 
-### Operating System:
-- **Android**: Android 10 atau lebih tinggi
+### Recommended System Requirements (Android)
 
-### Processor:
+#### Operating System
+- Android 10 atau lebih tinggi
+
+#### Processor
 - Octa-core 2.0 GHz atau lebih tinggi
 
-### Memory:
+#### Memory
 - 4 GB RAM atau lebih
 
-### Storage:
+#### Storage
 - 200 MB ruang kosong untuk aplikasi
 
-### Internet:
+#### Internet
 - Koneksi internet untuk pengiriman notifikasi darurat
-

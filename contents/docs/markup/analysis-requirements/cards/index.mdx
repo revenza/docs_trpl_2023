@@ -3,66 +3,33 @@ title: "Business Requirement Document"
 version: "1.0"
 ---
 
+Aplikasi ini bernama **Emergency Alert**, dirancang untuk membantu pengguna dalam situasi darurat. Dengan fitur utama seperti pelacakan lokasi real-time dan pengiriman notifikasi darurat ke WhatsApp, aplikasi ini bertujuan menjadi solusi cepat dan mudah digunakan. 
 
-## **Proyek: Emergency Alert**
+### Pendahuluan
 
-### **Pendahuluan**
+Dalam kondisi darurat, banyak orang mengalami kesulitan untuk mengabari teman atau keluarga dengan cepat. Aplikasi ini hadir untuk menyelesaikan masalah tersebut, dengan kemampuan mengirimkan informasi lokasi langsung ke penerima yang telah terdaftar. Selain itu, fitur pelacakan memungkinkan pengguna mengetahui posisi orang-orang terdekat secara real-time.
 
-#### **Deskripsi Proyek**
-Aplikasi ini bertujuan membantu pengguna melacak lokasi teman atau kerabat yang membutuhkan bantuan darurat. Fitur utama mencakup pengiriman notifikasi darurat dan lokasi ke WhatsApp ketika tombol darurat ditekan, serta fitur pelacakan lokasi real-time.
+Aplikasi ini akan tersedia untuk pengguna Android (versi 7 ke atas) dan iOS (versi 12 ke atas). Semua data pengguna, seperti lokasi dan kontak, akan dienkripsi untuk memastikan keamanan dan privasi.
 
-#### **Tujuan Utama**
-- Memberikan solusi cepat untuk mengirim notifikasi darurat.
-- Membantu pengguna menemukan lokasi teman secara akurat dan real-time.
-- Terintegrasi dengan WhatsApp untuk penyampaian informasi secara instan.
+### Fungsi Utama Aplikasi
 
-#### **Masalah yang Diselesaikan**
-- Keterlambatan dalam menyampaikan informasi lokasi darurat.
-- Sulitnya mengetahui lokasi teman atau kerabat dalam situasi mendesak.
+Aplikasi ini memiliki tiga fungsi inti yang saling terhubung:
+1. Tombol darurat yang bisa mengirimkan pesan dan lokasi langsung ke WhatsApp penerima.
+2. Pelacakan lokasi yang memungkinkan pengguna berbagi dan melihat posisi secara real-time.
+3. Manajemen kontak darurat untuk menyimpan, mengubah, atau menghapus nomor WhatsApp penerima.
 
----
+### Cara Kerja
 
-### **Fungsional dan Spesifikasi Kebutuhan**
+Ketika pengguna menekan tombol darurat, aplikasi akan langsung mengambil lokasi terkini pengguna, kemudian mengirimkannya bersama pesan darurat ke WhatsApp. Lokasi ini juga bisa dilihat di aplikasi jika penerima memberi izin pelacakan. Pengguna dapat mengatur daftar kontak darurat mereka kapan saja melalui fitur CRUD yang tersedia.
 
-#### **Fungsional Utama**
-1. **Tombol Darurat**  
-   - Mengirimkan notifikasi darurat berisi pesan dan lokasi pengguna ke WhatsApp penerima yang telah terdaftar.
-2. **Pelacakan Lokasi Real-Time**  
-   - Menampilkan lokasi teman yang telah memberikan izin pelacakan.
-3. **Manajemen Kontak Darurat**  
-   - CRUD (Create, Read, Update, Delete) untuk nama dan nomor WhatsApp penerima darurat.
+### Teknologi yang Digunakan
 
-#### **Spesifikasi Teknis**
-- **Platform:** Aplikasi mobile berbasis React Native, kompatibel untuk Android dan iOS.
-- **Backend:** Menggunakan PHP untuk manajemen data penerima.
-- **Database:** MySQL untuk menyimpan data kontak darurat dan log aktivitas.
-- **Integrasi:** WhatsApp API untuk pengiriman pesan otomatis.
+Aplikasi ini menggunakan **React Native** sebagai kerangka kerja utama untuk mendukung Android dan iOS. Backend aplikasi dikelola dengan PHP, sedangkan data disimpan di MySQL. Untuk mengintegrasikan pengiriman pesan, WhatsApp API digunakan.
 
----
+### Keandalan dan Kinerja
 
-### **Kebutuhan Non-Fungsional**
+Aplikasi dirancang untuk bekerja dengan cepat. Notifikasi darurat harus terkirim dalam waktu kurang dari tiga detik. Dalam kondisi normal, aplikasi mampu memproses hingga 1000 notifikasi per detik. Selain itu, backup otomatis dilakukan setiap hari untuk memastikan keamanan data pengguna.
 
-#### **Kinerja**
-- Aplikasi harus dapat mengirimkan notifikasi darurat dalam waktu kurang dari 3 detik.
-- Memproses hingga 1000 notifikasi darurat per detik.
+### Kesimpulan
 
-#### **Keandalan**
-- Sistem harus tersedia 24/7 dengan downtime maksimal 1 jam per bulan.
-- Notifikasi darurat harus mencapai penerima dengan tingkat keberhasilan 99%.
-
-#### **Keamanan**
-- Semua data pengguna dienkripsi, termasuk nomor kontak dan lokasi.
-#### **Kesesuaian**
-- Aplikasi harus dapat berjalan di Android (versi 7 ke atas) dan iOS (versi 12 ke atas).
-- Mendukung berbagai bahasa (termasuk Bahasa Indonesia dan Inggris).
-
----
-
-### **Kebutuhan Pemeliharaan**
-- **Backup Otomatis**  
-  - Data kontak dan log aktivitas disimpan setiap hari di server cadangan.
-
----
-
-### **Kesimpulan**
-Aplikasi ini dirancang untuk memberikan solusi cepat dan andal dalam situasi darurat dengan memanfaatkan teknologi pelacakan lokasi dan integrasi WhatsApp. Proyek ini bertujuan menciptakan pengalaman pengguna yang mudah, cepat, dan aman.
+Proyek ini dirancang dengan fokus pada kecepatan, kemudahan penggunaan, dan keamanan. Dengan integrasi teknologi modern, aplikasi Emergency Alert diharapkan bisa menjadi alat yang andal dalam membantu pengguna menghadapi situasi darurat.
