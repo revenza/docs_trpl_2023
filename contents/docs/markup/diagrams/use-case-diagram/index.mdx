@@ -7,34 +7,85 @@ title: Usecasee
 
 <Mermaid chart={`
 %% Use Case Diagram
-usecaseDiagram
-actor Pengguna as "User"
-actor Admin as "Administrator"
+classDiagram
+  class Pengguna {
+    <<actor>>
+  }
+  class Admin {
+    <<actor>>
+  }
+  class UC1 {
+    Registrasi Akun
+  }
+  class UC2 {
+    Login
+  }
+  class UC3 {
+    Lihat Dashboard
+  }
+  class UC4 {
+    Tambah Kontak
+  }
+  class UC5 {
+    Edit Kontak
+  }
+  class UC6 {
+    Hapus Kontak
+  }
+  class UC7 {
+    Kirim Notifikasi Darurat
+  }
+  class UC8 {
+    Lihat Blog
+  }
+  class UC9 {
+    Tambah Blog
+  }
+  class UC10 {
+    Baca Blog
+  }
+  class UC11 {
+    Kelola Pengguna
+  }
+  class UC12 {
+    Kelola Kontak
+  }
+  class UC13 {
+    Kelola Blog
+  }
 
-Pengguna --> (Registrasi Akun)
-Pengguna --> (Login)
-Pengguna --> (Lihat Dashboard)
-Pengguna --> (Tambah Kontak)
-Pengguna --> (Edit Kontak)
-Pengguna --> (Hapus Kontak)
-Pengguna --> (Kirim Notifikasi Darurat)
-Pengguna --> (Lihat Blog)
-Pengguna --> (Tambah Blog)
-Pengguna --> (Baca Blog)
+  Pengguna --> UC1
+  Pengguna --> UC2
+  Pengguna --> UC3
+  Pengguna --> UC4
+  Pengguna --> UC5
+  Pengguna --> UC6
+  Pengguna --> UC7
+  Pengguna --> UC8
+  Pengguna --> UC9
+  Pengguna --> UC10
 
-Admin --> (Kelola Pengguna)
-Admin --> (Kelola Kontak)
-Admin --> (Kelola Blog)
-Admin --> (Registrasi Akun)
-Admin --> (Login)
-Admin --> (Lihat Dashboard)
-Admin --> (Tambah Kontak)
-Admin --> (Edit Kontak)
-Admin --> (Hapus Kontak)
-Admin --> (Kirim Notifikasi Darurat)
-Admin --> (Lihat Blog)
-Admin --> (Tambah Blog)
-Admin --> (Baca Blog)
+  Admin --> UC11
+  Admin --> UC12
+  Admin --> UC13
+  Admin --> UC1
+  Admin --> UC2
+  Admin --> UC3
+  Admin --> UC4
+  Admin --> UC5
+  Admin --> UC6
+  Admin --> UC7
+  Admin --> UC8
+  Admin --> UC9
+  Admin --> UC10
+
+  %% Group use cases into separate clusters for clarity
+  UC1 --> UC2
+  UC3 --> UC4
+  UC5 --> UC6
+  UC7 --> UC8
+  UC9 --> UC10
+  UC11 --> UC12 --> UC13
 
 `}/>
 
