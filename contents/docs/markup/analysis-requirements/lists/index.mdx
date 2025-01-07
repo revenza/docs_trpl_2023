@@ -7,28 +7,27 @@ description: web Pelacak Lokasi Teman dalam Keadaan Darurat.
 
 ## 1. Aplikasi Web
 
-### 1.1 Web Server
-- **Apache HTTP Server** atau **Nginx**: Digunakan untuk hosting aplikasi web pada server. Web server ini akan melayani permintaan dari klien (browser) untuk halaman HTML, CSS, dan JavaScript.
+Untuk membangun aplikasi web pelacak lokasi teman dalam keadaan darurat, kita memerlukan beberapa teknologi dasar yang dapat menunjang fungsionalitas aplikasi secara optimal.
 
-### 1.2 Database Management System
-- **MySQL** atau **MariaDB**: Digunakan untuk menyimpan data pengguna, kontak darurat, dan riwayat notifikasi. Sistem manajemen database ini sangat umum digunakan dalam aplikasi berbasis PHP.
+### 1.1 **Web Server**
+Aplikasi web ini akan di-hosting pada **Apache HTTP Server** atau **Nginx**. Web server ini bertugas untuk melayani permintaan dari pengguna yang mengakses aplikasi melalui browser, seperti halaman HTML, CSS, dan JavaScript. Dengan menggunakan server ini, aplikasi dapat berjalan dengan lancar dan responsif.
 
-### 1.3 Backend Framework
-- **PHP 7.4+**: Bahasa pemrograman yang digunakan untuk membuat logika server-side, memproses data dari pengguna, dan mengirimkan notifikasi melalui API WhatsApp.
+### 1.2 **Database Management System**
+Untuk menyimpan berbagai data penting seperti **data pengguna**, **kontak darurat**, dan **riwayat notifikasi**, kita akan menggunakan **MySQL** atau **MariaDB** sebagai sistem manajemen database. Keduanya adalah pilihan yang sangat baik karena sering digunakan dalam aplikasi berbasis PHP dan menawarkan fitur yang stabil dan efisien untuk pengelolaan data.
 
-### 1.4 Frontend Technologies
-- **HTML5, CSS3, JavaScript**: Digunakan untuk membangun antarmuka pengguna dan interaksi pengguna dengan aplikasi.
-- **Bootstrap 4/5**: Framework CSS untuk membangun tampilan responsif dan mobile-friendly pada aplikasi web.
-- **jQuery**: Digunakan untuk menambah interaktivitas pada elemen-elemen di halaman seperti deteksi lokasi dan pengiriman notifikasi.
+### 1.3 **Backend Framework**
+Di sisi server, aplikasi ini akan dikembangkan menggunakan **PHP 7.4+**. PHP berfungsi untuk memproses logika server-side, seperti memvalidasi input pengguna, mengelola data, dan mengirimkan notifikasi melalui API WhatsApp. Versi PHP yang lebih baru memastikan aplikasi berjalan lebih cepat dan lebih aman.
 
-### 1.5 Geolocation API
-- **HTML5 Geolocation API**: Digunakan untuk mendeteksi lokasi pengguna secara otomatis ketika tombol darurat ditekan.
+### 1.4 **Frontend Technologies**
+Antarmuka pengguna akan dibangun menggunakan **HTML5**, **CSS3**, dan **JavaScript**, yang merupakan dasar dalam pembuatan aplikasi web modern. Untuk memberikan pengalaman pengguna yang lebih responsif dan mobile-friendly, kita akan menggunakan **Bootstrap 4/5**, sebuah framework CSS yang sangat populer. Selain itu, **jQuery** akan digunakan untuk menambah interaktivitas, seperti deteksi lokasi secara otomatis dan pengiriman notifikasi darurat.
 
-### 1.6 WhatsApp API
-- **Twilio API for WhatsApp** atau **WhatsApp Business API**: Digunakan untuk mengirimkan pesan darurat dan lokasi pengguna ke nomor WhatsApp yang sudah ditentukan.
+### 1.5 **Geolocation API**
+Untuk mendeteksi lokasi pengguna secara otomatis setiap kali tombol darurat ditekan, aplikasi ini akan memanfaatkan **HTML5 Geolocation API**. API ini memungkinkan aplikasi mengakses lokasi perangkat pengguna dengan izin yang diberikan oleh pengguna.
 
-### 1.7 Development Tools
-- **Visual Studio Code**: Text editor yang digunakan untuk menulis kode aplikasi.
-- **XAMPP** atau **MAMP**: Digunakan untuk menjalankan server lokal untuk pengembangan aplikasi web berbasis PHP.
-  
----
+### 1.6 **WhatsApp API**
+Aplikasi ini juga akan terintegrasi dengan **Twilio API for WhatsApp** atau **WhatsApp Business API** untuk mengirimkan pesan darurat yang berisi lokasi pengguna ke nomor WhatsApp yang telah ditentukan. Penggunaan API ini memastikan pengiriman pesan yang cepat dan andal dalam situasi darurat.
+
+### 1.7 **Development Tools**
+Dalam pengembangan aplikasi ini, kami akan menggunakan **Visual Studio Code** sebagai text editor utama untuk menulis kode aplikasi. Untuk pengembangan lokal, kita akan memanfaatkan **XAMPP** atau **MAMP**, yang menyediakan server lokal yang dapat menjalankan aplikasi berbasis PHP dengan mudah.
+
+Dengan menggunakan kombinasi teknologi ini, aplikasi web pelacak lokasi teman dalam keadaan darurat akan memiliki performa yang optimal, responsif, dan mudah digunakan, memberikan solusi yang andal bagi penggunanya dalam situasi darurat.
