@@ -8,12 +8,8 @@ title: Usecase
 <Mermaid chart={`
 %% Use Case Diagram
 classDiagram
-  class Pengguna {
-    <<actor>>
-  }
-  class Admin {
-    <<actor>>
-  }
+  class Pengguna
+  class Admin
   class UC1 {
     Registrasi Akun
   }
@@ -64,7 +60,7 @@ classDiagram
   Pengguna --> UC8
   Pengguna --> UC9
   Pengguna --> UC10
-
+  
   Admin --> UC11
   Admin --> UC12
   Admin --> UC13
@@ -78,14 +74,5 @@ classDiagram
   Admin --> UC8
   Admin --> UC9
   Admin --> UC10
-
-  %% Group use cases into separate clusters for clarity
-  UC1 --> UC2
-  UC3 --> UC4
-  UC5 --> UC6
-  UC7 --> UC8
-  UC9 --> UC10
-  UC11 --> UC12 --> UC13
-
 `}/>
 
