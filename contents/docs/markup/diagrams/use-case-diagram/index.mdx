@@ -7,9 +7,9 @@ title: Usecasee
 
 <Mermaid chart={`
 %% Use Case Diagram
-left to right direction
-actor Pengguna as User
-actor Admin
+direction LR
+actor Pengguna as "User"
+actor Admin as "Administrator"
 
 usecase UC1 as "Registrasi Akun"
 usecase UC2 as "Login"
@@ -25,30 +25,30 @@ usecase UC11 as "Kelola Pengguna"
 usecase UC12 as "Kelola Kontak"
 usecase UC13 as "Kelola Blog"
 
-User --> UC1
-User --> UC2
-User --> UC3
-User --> UC4
-User --> UC5
-User --> UC6
-User --> UC7
-User --> UC8
-User --> UC9
-User --> UC10
+"User" --> UC1
+"User" --> UC2
+"User" --> UC3
+"User" --> UC4
+"User" --> UC5
+"User" --> UC6
+"User" --> UC7
+"User" --> UC8
+"User" --> UC9
+"User" --> UC10
 
-Admin --> UC11
-Admin --> UC12
-Admin --> UC13
-Admin --> UC1
-Admin --> UC2
-Admin --> UC3
-Admin --> UC4
-Admin --> UC5
-Admin --> UC6
-Admin --> UC7
-Admin --> UC8
-Admin --> UC9
-Admin --> UC10
+"Administrator" --> UC11
+"Administrator" --> UC12
+"Administrator" --> UC13
+"Administrator" --> UC1
+"Administrator" --> UC2
+"Administrator" --> UC3
+"Administrator" --> UC4
+"Administrator" --> UC5
+"Administrator" --> UC6
+"Administrator" --> UC7
+"Administrator" --> UC8
+"Administrator" --> UC9
+"Administrator" --> UC10
 
 `}/>
 
