@@ -10,8 +10,17 @@ export default function Home() {
         Web Documents
       </h1>
       <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
-        Kumpulan dokumentasi dari aplikasi yang ingin di buat. seperti BUSSINES REQUIREMENT dll.
-      </p>
+  Kumpulan dokumentasi dari aplikasi yang ingin dibuat, seperti BUSSINES REQUIREMENT dll. Dan berikut link web-nya:{" "}
+  <a 
+    href="https://idboosthost.my.id/splash.php/index.php" 
+    className="text-blue-500 underline" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    https://idboosthost.my.id/splash.php/index.php
+  </a>
+</p>
+
       <div className="flex items-center gap-5">
         <Link
           href={`/docs${PageRoutes[0].href}`}
