@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8">
       <h1 className="text-4xl font-bold mb-4 sm:text-7xl">
-        Web Documents
+        Emergency Alert
       </h1>
       <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
-  Kumpulan dokumentasi dari aplikasi yang ingin dibuat, seperti BUSSINES REQUIREMENT dll. Dan berikut link web-nya:{" "}
+  Dan berikut link web-nya:{" "}
   <a 
     href="https://idboosthost.my.id/splash.php/index.php" 
     className="text-blue-500 underline" 
