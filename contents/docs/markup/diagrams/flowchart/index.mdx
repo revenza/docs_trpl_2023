@@ -5,13 +5,13 @@ title: FlowChart
 ---
 <Mermaid chart={`
 graph TD
-    Start --> |Masuk ke website| A[Sudah Punya Akun?]
+    Start --> |Masuk ke website| A{Sudah Punya Akun?}
     A --> |Yes| B[Login]
     A --> |No| C[Daftar Akun]
     B --> D[Masuk ke Dashboard]
     C --> B
 
-    D --> |Belum punya kontak?| E{Punya Info Kontak?}
+    D --> E{Punya Info Kontak?}
     E --> |No| F[Buat Kontak Baru]
     E --> |Yes| G[Informasi Kontak Muncul di Dashboard]
     F --> H[Input Nama dan No. WhatsApp]
